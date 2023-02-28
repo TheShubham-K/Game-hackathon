@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "96c17590-50fe-41bf-9003-eb9b56382560",
+		"name": "Game API",
+		"description": "# Introduction\nIt gives the data about the games.\n\n# Overview\nyou have to provide the path of the csv file in controller\n\n# Authentication\nMy A{PI is uses JWT Authentication.\n\n# Error Codes\nif post is not found\n\n# Rate limit\nI am not sure!",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18266624"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/games/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/games/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"all"
+					]
+				},
+				"description": "find all the gemes"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/games/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games",
+								"all"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/games/5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXZpIiwiZXhwIjoxNjc3NTU1NTIyLCJpYXQiOjE2Nzc1MTk1MjJ9.jgyxsN4wTqMNpnz-R4vZZ8tqrv9Kv0yZpiLQwavHGs0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/games/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"1"
+					]
+				},
+				"description": "find game by Id"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/games/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games",
+								"5"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/games/new-game?title=ok&platform=iPad&score=5&genre=puzzel&editorChoice=Y",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXZpIiwiZXhwIjoxNjc3NTU1NTIyLCJpYXQiOjE2Nzc1MTk1MjJ9.jgyxsN4wTqMNpnz-R4vZZ8tqrv9Kv0yZpiLQwavHGs0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/games/new-game?title=ok&platform=iPad&score=5&genre=puzzel&editorChoice=Y",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"new-game"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "ok"
+						},
+						{
+							"key": "platform",
+							"value": "iPad"
+						},
+						{
+							"key": "score",
+							"value": "5"
+						},
+						{
+							"key": "genre",
+							"value": "puzzel"
+						},
+						{
+							"key": "editorChoice",
+							"value": "Y"
+						}
+					]
+				},
+				"description": "create new game "
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/games/new-game?title=ok&platform=iPad&score=5&genre=puzzel&editorChoice=Y",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games",
+								"new-game"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "ok"
+								},
+								{
+									"key": "platform",
+									"value": "iPad"
+								},
+								{
+									"key": "score",
+									"value": "5"
+								},
+								{
+									"key": "genre",
+									"value": "puzzel"
+								},
+								{
+									"key": "editorChoice",
+									"value": "Y"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/games/update?title=Alto&platform=iPad&score=5&genre=puzzel&editorChoice=Y&id=99",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXZpIiwiZXhwIjoxNjc3NTU1NTIyLCJpYXQiOjE2Nzc1MTk1MjJ9.jgyxsN4wTqMNpnz-R4vZZ8tqrv9Kv0yZpiLQwavHGs0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/games/update?title=Alto&platform=iPad&score=5&genre=puzzel&editorChoice=Y&id=99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"update"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Alto"
+						},
+						{
+							"key": "platform",
+							"value": "iPad"
+						},
+						{
+							"key": "score",
+							"value": "5"
+						},
+						{
+							"key": "genre",
+							"value": "puzzel"
+						},
+						{
+							"key": "editorChoice",
+							"value": "Y"
+						},
+						{
+							"key": "id",
+							"value": "99"
+						}
+					]
+				},
+				"description": "update game detail"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/games/update?title=Alto&platform=iPad&score=5&genre=puzzel&editorChoice=Y&id=99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games",
+								"update"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Alto"
+								},
+								{
+									"key": "platform",
+									"value": "iPad"
+								},
+								{
+									"key": "score",
+									"value": "5"
+								},
+								{
+									"key": "genre",
+									"value": "puzzel"
+								},
+								{
+									"key": "editorChoice",
+									"value": "Y"
+								},
+								{
+									"key": "id",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/games/delete?id=99",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/games/delete?id=99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "99"
+						}
+					]
+				},
+				"description": "Delete geme by id"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/games/delete?id=99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/games/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"ravi\",\n    \"password\": \"pass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/games/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"authenticate"
+					]
+				},
+				"description": "For authentication of the user by Jwt Tockens"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/games/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games",
+								"authenticate"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
